@@ -95,3 +95,66 @@ Example model used:
 
 ```python
 SARIMA(1,1,1)(1,1,1,12)
+Where:
+- (1,1,1) represents the non-seasonal parameters
+- (1,1,1,12) represents the seasonal parameters
+- 12 indicates the seasonal cycle
+
+---
+
+## Results and Findings
+- Holiday weeks had higher sales than non-holiday weeks.
+- Unemployment affected some Walmart stores more than others.
+- Temperature and fuel price had a smaller effect on weekly sales.
+- Some stores consistently performed better than others.
+- The SARIMA model successfully predicted the next 12 weeks of sales with reasonable accuracy.
+
+---
+
+## Visualizations Included
+- Weekly sales trend graph
+- Correlation heatmap
+- Holiday vs non-holiday sales comparison graph
+- Store-wise sales comparison chart
+- Forecasted vs actual sales plot
+- Final 12-week prediction table
+
+---
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## Repository Structure
+
+```text
+walmart-sales-analysis-and-forecasting/
+│
+├── data/
+│   └── Walmart.csv
+│
+├── notebooks/
+│   ├── Walmart_Sales_Analysis.ipynb
+│   └── Walmart_Sales_Forecasting.ipynb
+│
+├── images/
+│   ├── sales_trend.png
+│   ├── correlation_heatmap.png
+│   ├── holiday_sales.png
+│   ├── forecast_plot.png
+│
+├── results/
+│   ├── forecast_table.csv
+│   └── final_summary.txt
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
